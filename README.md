@@ -6,7 +6,7 @@ Steve Drees
 John Dinsmore
 
 URL:
-https://ide.c9.io/calicci/pennypincher
+https://pennypincher-calicci.c9.io/
 
 Objective:
 Create a primarily mobile app that will pull deals from the Yelp API 
