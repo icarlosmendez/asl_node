@@ -1,0 +1,70 @@
+header{
+	background-image: url(../img/green-poly.png);
+	min-height: 50%;
+	
+	h1 {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+/*-- NAV BAR --*/
+._4z_b{
+	background-color: #95d43b;
+	color: white;
+	padding: 50px;
+	border-radius: 50%;
+	position: absolute;
+	top: 5%;
+	left: 85%;
+	font-family: 'Patua One', cursive;  
+	font-size: 2em;
+	letter-spacing: 2px;
+	transition: all .5s ease;
+	text-decoration: none;
+}
+
+#login:hover{
+	background-color: #4884de;
+	transition: all .5s ease;
+}
+
+#logOut{
+	float: right;
+}
+
+#small-logo{
+	max-width: 100%;
+	position: relative;
+	bottom: 10px;
+}
+
+#searchbox{
+	float: left;
+	width: 30%;
+	padding: 5px;
+	margin-top: 5px;
+	margin-left: 50px;
+}
+
+#search{
+	width: 80%;
+	border: none;
+	padding: 5px;
+}
+
+#submit{
+	border: none;
+	padding: 5px;
+	background-color: #94d43b;
+	color: white;
+}
+
+#submit:hover{
+	background-color: #adf646;
+}
+
+#navbar{
+	text-align: center;
+	background-color: #558c03;
+}

@@ -1,0 +1,233 @@
+
+
+
+
+#description{
+	padding-top:2rem;
+}
+
+
+
+
+
+
+
+#xMarks{
+	background-color: #920f18;
+	padding: 10px;
+	opacity: 1;
+	text-shadow: none;
+	color: white;
+}
+
+
+
+
+.width{
+	width: 90%;
+	margin-bottom: 5px;
+}
+
+label{
+	width: 25%;
+	text-align: right;
+}
+
+
+#file{
+	margin-left: 35%;
+}
+
+.reg{
+	font-size: 2em;
+	height: 70px;
+	border: 2px #920f18 solid;
+	font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+#verticle-line{
+	border-right: 2px black solid;
+}
+
+#contact{
+	width: 70%;
+}
+
+#sub{
+	margin: 5%;
+	margin-left: 39%;
+	background: #920f18;
+	font-size: 2em;
+	padding: 10px 50px;
+	color: white;
+	transition: all .5s ease;
+}
+
+#sub:hover{
+	background: #c8141f;
+	transition: all .5s ease;
+}
+
+#summarize{
+	font-size: 1.5em;
+}
+/* -- login and register modal inputs END--*/
+
+#up{
+	margin-top: 7%;
+}
+
+b{
+	font-family:'Voltaire',Arial,sans-serif;
+	font-size: 1.4em;
+}
+
+
+.hi{
+	color:#fff;
+	font-size: 3em;
+	font-weight: 300;
+	font-family: 'Oswald', sans-serif;	
+}
+
+#name{
+	text-shadow: 8px 8px rgba(0,0,0,0.3);
+}
+
+#signUp{
+	border: 5px white solid;
+	color: white;
+	font-size: 3em;
+	font-family: 'Oswald', sans-serif;
+	padding-left: 80px;
+	padding-right: 80px;
+	transition: all .2s ease;
+}
+
+#signUp:hover{
+	transition: all .2s ease;
+	color: #558c03;
+	background-color: white;
+}
+
+/*--- FULL PRICE ---*/
+
+#full-price{
+	margin: 1% 0;
+	text-align: center; 
+	font-size: 3.5em; 
+	color: #558c03;
+}
+
+.lines{
+	margin-top: 1%;
+}
+
+#info{
+	text-align: center;
+	font-size: 2em;
+}
+
+.lead{
+	color: #920f18;
+}
+
+p{
+	font-size: 1.8em;
+	line-height: 2;
+	font-family: 'Alegreya Sans', sans-serif;
+	font-weight: 300;	
+}
+
+#wallet{
+	max-width: 100%;
+	margin: 5% 31%;
+}
+/*--- WHO AM I END---*/
+
+
+/*--- My Process ---*/
+
+#proOne{
+	margin-top: 0;
+}
+
+.steps{
+	font-size: 5em;
+}
+
+.web{
+	border: 2px black solid;
+	border-radius: 3%;
+}
+
+.proName{
+	color: #920f18;
+}
+
+.facts{
+	display: inline-block;
+	position: inherit;
+	top: 60px;
+	right: 250px;
+	list-style-type:circle;
+	font-size: 1.5em;
+	text-align: left;
+	font-family: 'Alegreya', serif;
+}
+
+.proDesc{
+	text-align: left;
+	margin-top: 12%;
+}
+
+.proTwo{
+	margin-top: 5%;
+}
+
+/*--- My Process END---*/
+
+/*--- RESULTS PAGE ---*/
+
+#results{
+	background-color: white;
+	width: 50%;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	padding: 20px;
+	margin: 5% auto 2% auto;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.half-line{
+	width: 25%;
+	display: inline-block;
+	margin-bottom: 10px;
+	border-top: 3px black solid;
+}
+
+form h2{
+	position: relative;
+	top: 50px;
+	font-size: 1em;
+}
+
+form h3{
+	text-align: center;
+	font-size: 2em;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 5%;
+	display: inline-block;
+}
+
+#proImg{
+	position: relative;
+	left: 1px;
+}
+
+#logout{
+	margin-top: 50px;
+}
+/*--- RESULTS PAGE END ---*/

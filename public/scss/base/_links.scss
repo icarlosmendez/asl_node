@@ -1,0 +1,14 @@
+a[href^=tel]{
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	color: black;
+	display: inline-block;
+	font-style: normal;
+	margin-top: 10px;
+	padding: 3px 5px;
+	text-decoration: none;
+}
+
+a{
+	color: black;
+}

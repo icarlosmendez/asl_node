@@ -19,3 +19,6 @@ Express.js
 EJS.js
 Sass
 Foundation
+
+Google Fonts Collection:
+https://www.google.com/fonts#ReviewPlace:refine/Collection:Alegreya+Sans|Voltaire|Patua+One|Oswald

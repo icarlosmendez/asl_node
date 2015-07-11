@@ -213,7 +213,7 @@ $base-line-height: 1.5 !default;
 //
 // Turns off the element-invisible effect.
 @mixin element-invisible-off {
-  position: static !important;
+  position: public !important;
   height: auto;
   width: auto;
   overflow: visible;

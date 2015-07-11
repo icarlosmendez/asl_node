@@ -100,7 +100,7 @@ $topbar-dropdown-arrows: true !default; //Set false to remove the \00bb >> text 
 @mixin topbar-show-dropdown {
   @include element-invisible-off();
   display: block;
-  position: absolute !important; // Reset the position from static to absolute
+  position: absolute !important; // Reset the position from public to absolute
 }
 
 @include exports("top-bar") {
@@ -415,7 +415,7 @@ $topbar-dropdown-arrows: true !default; //Set false to remove the \00bb >> text 
         }
 
         &.moved {
-          position: static;
+          position: public;
 
           > .dropdown {
             @include topbar-show-dropdown();

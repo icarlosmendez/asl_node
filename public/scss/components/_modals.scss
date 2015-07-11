@@ -1,0 +1,110 @@
+.modal-dialog{
+	margin-top: 10%;
+	width: 35%;
+}
+
+.modal-content{
+	  background: #f8f8f8; 
+}
+
+.modal-header{
+	border: 0;
+}
+
+.modalHead-line{
+	margin-left: 36.5%;
+}
+
+.login-modal h2{
+	position: relative;
+	bottom: 150px;
+	font-size: 4em;
+	letter-spacing: 2px;
+}
+
+
+/* -- login and register modal inputs --*/
+.person{
+	position: relative;
+	bottom: 180px;
+}
+
+.facebook{
+	background-color: #2e3192;
+	padding: 25px;
+	padding-left: 58px;
+	padding-right: 58px;
+	font-size: 1.5em;
+	position: relative;
+	bottom: 130px;
+	color: white;
+	text-decoration: none;
+	letter-spacing: 2px;
+	border-bottom: 5px #20225f solid;
+	border-radius: 7px;
+	transition: all .5s ease;
+}
+
+.facebook:hover{
+	background-color: #373a88;
+	bottom: 125px;
+	border-bottom: none;
+	transition: all .5s ease;
+}
+
+.or{
+	text-align: center; 
+	font-size: 3.5em; 
+	color: black;	
+	position: relative;
+	bottom: 100px;
+}
+
+.label_text{
+	padding: 5% 15%;
+	font-size: 2em;
+	text-align: center;
+	position: relative;
+	bottom: 90px;
+	left: 20px;
+	font-family: "helvetica" arial;
+	background-color: #eaeaea;
+	border: none;
+	margin-bottom: 10px;
+}
+
+#loginButton{
+	font-family: 'Patua One', cursive;
+	background-color: #4884de;
+	color: white;
+	font-size: 3em;
+	padding: 10px 145px;
+	border-bottom: 5px #3866aa solid;
+	transition: all .5s ease;
+
+}
+
+#loginButton:hover{
+	background-color: #639df5;	
+	margin-top: 5px;
+	border-bottom: none;
+	transition: all .5s ease;
+
+}
+
+#registerButton{
+	font-family: 'Patua One', cursive;
+	color: white;
+	font-size: 3em;
+	padding: 10px 100px;
+	background-color: #558c03; 
+	border-bottom: 5px #3d6602 solid; 
+	transition: all .5s ease;
+}
+
+#registerButton:hover{
+	background-color: #72b60d; 
+	margin-top: 5px;
+	border-bottom: none;
+	transition: all .5s ease;
+}
