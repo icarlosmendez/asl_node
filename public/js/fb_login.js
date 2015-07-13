@@ -1,6 +1,3 @@
-// 
-var status = require('./fb_login.js');
-
 
 // This is called with the results from from FB.getLoginStatus().
 function statusChangeCallback(response) {
@@ -26,7 +23,7 @@ function statusChangeCallback(response) {
     }
     
     // My code returning the response object for use with Firebase database
-    return response;
+    status(response);
 }
 
 
@@ -42,7 +39,7 @@ function checkLoginState() {
 
 window.fbAsyncInit = function() {
     FB.init({
-        appId      : '917409704962632',
+        appId      : '903409399730249',
         cookie     : true,  // enable cookies to allow the server to access 
                 // the session
         xfbml      : true,  // parse social plugins on this page
@@ -113,4 +110,40 @@ function testAPI() {
 //   }(document, 'script', 'facebook-jssdk'));
 // </script>
 
-module.exports.checkLoginState = checkLoginState;
+
+
+
+/*****************************************************************************************************/
+
+
+/* ===================== pushing to firebase ===================== */
+
+var location = require('./main.js');
+
+// Create a reference to the database
+var myDataRef = new Firebase('https://pennypincherapp.firebaseio.com/');
+
+// Write a function that will check the status from the Facebook login
+function status(response) {
+    if(response) {
+        
+        if(response.status === 'unknown') {
+            console.log("Facebook says you're not connected! This message provided by the pennypincherapp.");
+        }
+        
+        if(response.status === 'connected') {
+            console.log("Facebook says you're connected! This message provided by the pennypincherapp.");
+            // If login is achieved, take the values and "set" them to the database
+            // using the set method, send data to the database
+            myDataRef.push({
+                            userid: response.authResponse['userID'], 
+                            status: response.status,
+                            latitude: location[0],
+                            longitude: location[1],
+                            country: location[2],
+                            city: location[3],
+                            region: location[4]
+            });
+        }
+    }
+}

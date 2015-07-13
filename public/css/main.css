@@ -7098,6 +7098,13 @@ header {
 .center {
   text-align: center; }
 
+/* Gradient transparent - color - transparent */
+hr {
+  margin: 5px 0;
+  border: 0;
+  height: 5px;
+  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent); }
+
 .modal-dialog {
   margin-top: 10%;
   width: 35%; }
