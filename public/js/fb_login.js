@@ -1,3 +1,6 @@
+// 
+var status = require('./fb_login.js');
+
 
 // This is called with the results from from FB.getLoginStatus().
 function statusChangeCallback(response) {
@@ -21,6 +24,9 @@ function statusChangeCallback(response) {
         document.getElementById('status').innerHTML = 'Please log ' +
         'into Facebook.';
     }
+    
+    // My code returning the response object for use with Firebase database
+    return response;
 }
 
 
@@ -106,3 +112,5 @@ function testAPI() {
 //      fjs.parentNode.insertBefore(js, fjs);
 //   }(document, 'script', 'facebook-jssdk'));
 // </script>
+
+module.exports.checkLoginState = checkLoginState;

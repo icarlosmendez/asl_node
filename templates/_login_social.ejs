@@ -1,0 +1,51 @@
+<div class="row">
+    
+    <div class="large-12 medium-12 small-12 columns">
+        
+        <!-- Logout Button -->
+        <button 
+            id="logOut"
+            class="_4z_b left"
+            action="logout" 
+        >Logout</button>
+        
+        <!--
+          Below we include the Login Button social plugin. This button uses
+          the JavaScript SDK to present a graphical Login button that triggers
+          the FB.login() function when clicked.
+        -->
+    
+        <!-- Begin Facebook Login Button Code -->
+        <fb:login-button 
+            class="_4z_b left" 
+            scope="public_profile,email" 
+            onlogin="checkLoginState();"
+        ></fb:login-button>
+        <!-- End Facebook Login Button Code -->
+        
+    
+<!--     </div>-->
+<!--</div>       -->
+        
+        
+        
+<!--<div class="row">-->
+<!--    <div class="large-12 medium-12 small-12 columns">-->
+        
+        <!-- Begin Facebook Like Button -->
+        <div
+          class="fb-like right"
+          data-share="true"
+          data-width="300"
+          data-show-faces="true">
+        </div>
+        <!-- End Facebook Like Button -->
+        
+        <!-- Login status from Facebook -->
+        <div 
+            id="status"
+            class="right"
+        ></div>
+
+    </div>
+</div>
