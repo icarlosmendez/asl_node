@@ -6888,10 +6888,6 @@ label {
 #up {
   margin-top: 7%; }
 
-b {
-  font-family: 'Voltaire',Arial,sans-serif;
-  font-size: 1.4em; }
-
 .hi {
   color: #fff;
   font-size: 3em;
@@ -7104,6 +7100,14 @@ hr {
   border: 0;
   height: 5px;
   background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent); }
+
+.footerLink {
+  margin-left: 40px; }
+
+footer {
+  background-color: #F5F5F5;
+  height: 50px;
+  line-height: 50px; }
 
 .modal-dialog {
   margin-top: 10%;

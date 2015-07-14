@@ -11,7 +11,7 @@ router.get('/privacy', function(req, res, next) {
 });
 
 router.get('/welcome', function(req, res, next) {
-  res.render('welcome', { title: 'Welcom' });
+  res.render('welcome', { title: 'Welcome' });
 });
 
 router.get('/tos', function(req, res, next) {

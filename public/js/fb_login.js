@@ -1,3 +1,7 @@
+// var 
+//     gps = require("./gps.js"),
+//     status = require("./database.js");
+
 
 // This is called with the results from from FB.getLoginStatus().
 function statusChangeCallback(response) {
@@ -90,26 +94,6 @@ function testAPI() {
     });
 }
 
-// Recommended minimum scripting required to run SDK.
-// Include inside the body tag on each page needed.
-// <script>
-//   window.fbAsyncInit = function() {
-//     FB.init({
-//       appId      : '917409704962632',
-//       xfbml      : true,
-//       version    : 'v2.4'
-//     });
-//   };
-
-//   (function(d, s, id){
-//      var js, fjs = d.getElementsByTagName(s)[0];
-//      if (d.getElementById(id)) {return;}
-//      js = d.createElement(s); js.id = id;
-//      js.src = "//connect.facebook.net/en_US/sdk.js";
-//      fjs.parentNode.insertBefore(js, fjs);
-//   }(document, 'script', 'facebook-jssdk'));
-// </script>
-
 
 
 
@@ -118,13 +102,19 @@ function testAPI() {
 
 /* ===================== pushing to firebase ===================== */
 
-var location = require('./main.js');
 
 // Create a reference to the database
 var myDataRef = new Firebase('https://pennypincherapp.firebaseio.com/');
 
 // Write a function that will check the status from the Facebook login
 function status(response) {
+    // instantiate the date object
+    var date = new Date();
+    // call the now method to get the current date and time
+    var now = Date.now();
+    // pass the now variable back to the date object to parse into human readable format 
+    var timestamp = Date(now);
+    
     if(response) {
         
         if(response.status === 'unknown') {
@@ -136,14 +126,21 @@ function status(response) {
             // If login is achieved, take the values and "set" them to the database
             // using the set method, send data to the database
             myDataRef.push({
-                            userid: response.authResponse['userID'], 
-                            status: response.status,
-                            latitude: location[0],
-                            longitude: location[1],
-                            country: location[2],
-                            city: location[3],
-                            region: location[4]
+                            time: timestamp,
+                            userid: response.authResponse.userID, 
+                            status: response.status
+                            // latitude: location.latitude
+                            // longitude: location[1],
+                            // country: location[2],
+                            // city: location[3],
+                            // region: location[4]
             });
+            console.log(date);
         }
     }
 }
+
+
+// Export this function which contains the 'response' from facebook with user data
+// module.exports = statusChangeCallback;
+

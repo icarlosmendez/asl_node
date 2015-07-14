@@ -27,6 +27,7 @@ var
         jscs = require('gulp-jscs'),
       concat = require('gulp-concat'),
       uglify = require('gulp-uglify'),
+//   browserify = require('gulp-browserify'),
 
 // sass compilation, prefixing, minification
         sass = require('gulp-sass'),
@@ -112,8 +113,10 @@ gulp.task('tests', ['lint', 'test', 'coveralls']);
 // JS
 gulp.task('devlint', function() {
     return gulp.src([
-        'public/js/main.js',
-        'public/js/server.js'])
+        'public/js/gps.js',
+        'public/js/databse.js',
+        'public/js/fb_login.js'
+        ])
         .pipe(jshint())
         .pipe(jshint.reporter('default'));
 });
@@ -121,8 +124,10 @@ gulp.task('devlint', function() {
 gulp.task('concatScripts', ['devlint'], function() {
     return gulp.src([
             'public/js/vendor/jquery.min.js',
-            'public/js/server.js',
-            'public/js/main.js'])
+            'public/js/fb_login.js',
+            'public/js/databse.js'
+            //'public/js/gps.js'
+            ])
         .pipe(maps.init())
         .pipe(concat('app.js'))
         .pipe(maps.write('./'))
@@ -131,13 +136,18 @@ gulp.task('concatScripts', ['devlint'], function() {
 });
 
 gulp.task('minifyScripts', ['concatScripts'], function() {
-    return gulp.src('public/js/app.js')
+    return gulp.src([
+        'public/js/fb_login',
+        'public/js/database.js',
+        'puclic/js/gps.js',
+        'public/js/app.js'
+        ])
         .pipe(uglify())
         .pipe(rename('app.min.js'))
         .pipe(gulp.dest('public/js'));
 });
 
-gulp.task('devScripts', ['minifyScripts']);
+gulp.task('devScripts', ['devlint']);
 
 
 // SASS
