@@ -6999,9 +6999,6 @@ form h3 {
   position: relative;
   left: 1px; }
 
-#logout {
-  margin-top: 50px; }
-
 /*--- RESULTS PAGE END ---*/
 .businessImage {
   padding-top: 3%; }
@@ -7055,9 +7052,6 @@ header {
   background-color: #4884de;
   transition: all 0.5s ease; }
 
-#logOut {
-  float: right; }
-
 #small-logo {
   max-width: 100%;
   position: relative;
@@ -7087,6 +7081,16 @@ header {
 #navbar {
   text-align: center;
   background-color: #558c03; }
+
+.profile {
+  float: left; }
+
+.fb:login-button {
+  margin-right: 20%; }
+
+#logOut {
+  margin-bottom: 0px;
+  margin-left: 20%; }
 
 #divResults {
   background: url(../img/blue-poly.png); }

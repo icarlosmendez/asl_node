@@ -58,3 +58,22 @@ app.use(function(err, req, res, next) {
 
 
 module.exports = app;
+
+
+//YELP SHIT
+//ANYTHING YOU WANT TO SHOW ON THE HOMEPAGE (PROCESS) DATA
+app.get("/",function(req,res) {
+      var yelp = require("yelp").createClient({
+        consumer_key: "44dGAgblwMC4eiapEgv2Eg",
+        consumer_secret: "7cLJ2tyXnPmdvWDakkcyRTs4qYY",
+        token: "a85eWTlMIhs34Ehs-z9ZmPxrbrVPAMnv",
+        token_secret: "9qxs-Xd-d11WrjGd_96yQB-raQY"
+      });
+
+        res.render("index");
+
+        app.on('connection', function() {
+            yelp.search({term: "restaurants", location: data['city'], deals_filter: true, limit: 9});
+      
+        });
+});

@@ -126,15 +126,19 @@ function status(response) {
             // If login is achieved, take the values and "set" them to the database
             // using the set method, send data to the database
             myDataRef.push({
+                            // Timestamp for the database
                             time: timestamp,
+                            // User data from Facebook login
                             userid: response.authResponse.userID, 
                             status: response.status
+                            // Location data from noGPS
                             // latitude: location.latitude
                             // longitude: location[1],
                             // country: location[2],
                             // city: location[3],
                             // region: location[4]
             });
+            // This just validates the date function
             console.log(date);
         }
     }

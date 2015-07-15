@@ -4,11 +4,25 @@
     
 var locationData = function(location) {
     
-    var userLocal = location;
-    
     console.log("Your location is: " + JSON.stringify(location));
     
-    return userLocal;
+    var suitcase = [];
+    var latitude = location.latitude;
+    suitcase.push(latitude);
+    var longitude = location.longitude;
+    suitcase.push(longitude);
+    var country = location.country_iso_code;
+    suitcase.push(country);
+    var city = location.city;
+    suitcase.push(city);
+    var state = location.region;
+    suitcase.push(state);
+    
+    // return suitcase;
+    
+    console.log("My location data " + suitcase);
 }; 
 
 NoGPS.getLocation(locationData);
+
+
