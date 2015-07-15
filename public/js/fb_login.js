@@ -36,16 +36,15 @@ function checkLoginState() {
     });
 }
 
-
 window.fbAsyncInit = function() {
     FB.init({
         appId      : '903409399730249',
+        status     : true,
         cookie     : true,  // enable cookies to allow the server to access 
                 // the session
         xfbml      : true,  // parse social plugins on this page
         version    : 'v2.2' // use version 2.2
 });
-
 
 
 // Now that we've initialized the JavaScript SDK, we call 
@@ -90,6 +89,16 @@ function testAPI() {
     });
 }
 
+// Logout function
+$('#logOut').click(function() {
+    alert( "Handler for .click() called." );
+    console.log("Logout commenced");
+    
+    FB.logout(function(response) {
+      // user is now logged out
+      document.getElementById('status').innerHTML = 'Thank you for using PennyPincherApp. You have been logged out of PennyPincherApp and Facebook.';
+    });
+});
 
 
 
@@ -102,7 +111,7 @@ function testAPI() {
 // Create a reference to the database
 var myDataRef = new Firebase('https://pennypincherapp.firebaseio.com/');
 
-// Write a function that will check the status from the Facebook login
+// Write a function that will check the Facebook login status
 function status(response) {
     // instantiate the date object
     var date = new Date();
@@ -113,22 +122,22 @@ function status(response) {
     
     if(response) {
         
-        if(response.status === 'unknown') {
+        if(response.status === 'unknown' || response.status === 'not_authorized') {
             console.log("Facebook says you're not connected! This message provided by the pennypincherapp.");
             // If login has not been achieved or attempted, 
             // take the values and "push" them to the database
             myDataRef.push({
-                // Timestamp for the database
-                time: timestamp,
-                // User data from Facebook login
-                userid: response.authResponse.userID, 
-                status: response.status,
-                // Location data from noGPS
-                latitude: location.latitude
-                // longitude: location[1],
-                // country: location[2],
-                // city: location[3],
-                // region: location[4]
+                            // Timestamp for the database
+                            time        : timestamp,
+                            // User data from Facebook login
+                            userid      : response.authResponse.userID, 
+                            status      : response.status,
+                            // Location data from noGPS
+                            latitude    : window.data[0],
+                            longitude   : window.data[1],
+                            country     : window.data[2],
+                            city        : window.data[3],
+                            region      : window.data[4]
             });
         }
         
@@ -138,16 +147,16 @@ function status(response) {
             // take the values and "push" them to the database
             myDataRef.push({
                             // Timestamp for the database
-                            time: timestamp,
+                            time        : timestamp,
                             // User data from Facebook login
-                            userid: response.authResponse.userID, 
-                            status: response.status,
+                            userid      : response.authResponse.userID, 
+                            status      : response.status,
                             // Location data from noGPS
-                            latitude: window.data[0],
-                            longitude: window.data[1],
-                            country: window.data[2],
-                            city: window.data[3],
-                            region: window.data[4]
+                            latitude    : window.data[0],
+                            longitude   : window.data[1],
+                            country     : window.data[2],
+                            city        : window.data[3],
+                            region      : window.data[4]
             });
             // This just validates the date function
             console.log(date);
