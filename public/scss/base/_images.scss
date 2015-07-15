@@ -1,3 +1,16 @@
-.businessImage{
-	padding-top:3%;
+img {
+	border: none;
+}
+
+.teaserImg-food {
+	// background-image: url("../img/food.png");  
+	// standard static sizing dimensions
+	// height: 400px;
+	// width: 400px;
+	
+	// attempt at making the image responsive
+	// height: auto;
+	// max-width: 100%;
+	
+	margin: 15% auto;
 }

@@ -1,7 +1,8 @@
 
 // NOGPS.IO SCRIPT
 // A location object will be passed to your callback
-    
+var data;
+
 var locationData = function(location) {
     
     console.log("Your location is: " + JSON.stringify(location));
@@ -18,11 +19,7 @@ var locationData = function(location) {
     var state = location.region;
     suitcase.push(state);
     
-    // return suitcase;
-    
-    console.log("My location data " + suitcase);
+    window.data = suitcase;
 }; 
-
+    
 NoGPS.getLocation(locationData);
-
-

@@ -7000,8 +7000,11 @@ form h3 {
   left: 1px; }
 
 /*--- RESULTS PAGE END ---*/
-.businessImage {
-  padding-top: 3%; }
+img {
+  border: none; }
+
+.teaserImg-food {
+  margin: 15% auto; }
 
 a[href^=tel] {
   border: 1px solid #ccc;

@@ -1,7 +1,3 @@
-// var 
-//     gps = require("./gps.js"),
-//     status = require("./database.js");
-
 
 // This is called with the results from from FB.getLoginStatus().
 function statusChangeCallback(response) {
@@ -119,24 +115,39 @@ function status(response) {
         
         if(response.status === 'unknown') {
             console.log("Facebook says you're not connected! This message provided by the pennypincherapp.");
+            // If login has not been achieved or attempted, 
+            // take the values and "push" them to the database
+            myDataRef.push({
+                // Timestamp for the database
+                time: timestamp,
+                // User data from Facebook login
+                userid: response.authResponse.userID, 
+                status: response.status,
+                // Location data from noGPS
+                latitude: location.latitude
+                // longitude: location[1],
+                // country: location[2],
+                // city: location[3],
+                // region: location[4]
+            });
         }
         
         if(response.status === 'connected') {
             console.log("Facebook says you're connected! This message provided by the pennypincherapp.");
-            // If login is achieved, take the values and "set" them to the database
-            // using the set method, send data to the database
+            // If login has been achieved, 
+            // take the values and "push" them to the database
             myDataRef.push({
                             // Timestamp for the database
                             time: timestamp,
                             // User data from Facebook login
                             userid: response.authResponse.userID, 
-                            status: response.status
+                            status: response.status,
                             // Location data from noGPS
-                            // latitude: location.latitude
-                            // longitude: location[1],
-                            // country: location[2],
-                            // city: location[3],
-                            // region: location[4]
+                            latitude: window.data[0],
+                            longitude: window.data[1],
+                            country: window.data[2],
+                            city: window.data[3],
+                            region: window.data[4]
             });
             // This just validates the date function
             console.log(date);
