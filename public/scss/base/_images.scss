@@ -7,14 +7,15 @@ img {
 	// standard static sizing dimensions
 	
 	width: 100%;
+	margin: 0;
 	
 	
 	@media #{$medium-and-up} {	//601px
-       width: 100%; 
+       width: 50%; 
        border-radius: 50%;
 	}
 	@media #{$large-and-up} {//993px
-		width: 50%;
+		width: 75%;
 	}
 	
 	// attempt at making the image responsive

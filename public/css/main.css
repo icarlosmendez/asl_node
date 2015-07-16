@@ -7001,14 +7001,15 @@ img {
 
 .teaserImg-food {
   width: 100%;
+  margin: 0;
   margin: 15% auto; }
   @media only screen and (min-width: 769px) {
     .teaserImg-food {
-      width: 100%;
+      width: 50%;
       border-radius: 50%; } }
   @media only screen and (min-width: 1025px) {
     .teaserImg-food {
-      width: 50%; } }
+      width: 75%; } }
 
 a[href^=tel] {
   border: 1px solid #ccc;

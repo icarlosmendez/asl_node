@@ -116,7 +116,6 @@ gulp.task('devlint', function() {
         'app.js',
         'public/js/gps.js',
         'public/js/fb_login.js',
-        'public/js/yelp.js',
         'routes/*.js'
         ])
         .pipe(jshint())
