@@ -1,10 +1,37 @@
-.footerLink{
-    margin-left:40px;
+.footerLink {
+    
+    li {
+        display: inline;
+        margin: 0 20px;
+        a {
+            height: 1.5rem;
+            line-height: 1.5rem;
+            margin: 1rem 0;
+        }
+    }
+    @media #{$small-and-up} {		//481px
+    
+    }
+    @media #{$smallish-and-up} {	//601px
+    
+    }
+    @media #{$sMedium-and-up} {		//641px
+    
+    }
+    @media #{$medium-and-up} {		//769px
+    
+    }
+    @media #{$large-and-up} {		//993px
+    
+    }
+    @media #{$xlarge-and-up} {		//1025px
+    
+    }
 }
 
 footer{
     background-color:#F5F5F5;
-    height: 50px;
-    line-height: 50px;
+    min-height: 50px;
+    margin: 2rem 0 0;
 }
 

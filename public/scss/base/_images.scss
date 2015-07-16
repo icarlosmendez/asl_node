@@ -5,8 +5,17 @@ img {
 .teaserImg-food {
 	// background-image: url("../img/food.png");  
 	// standard static sizing dimensions
-	// height: 400px;
-	// width: 400px;
+	
+	width: 100%;
+	
+	
+	@media #{$medium-and-up} {	//601px
+       width: 100%; 
+       border-radius: 50%;
+	}
+	@media #{$large-and-up} {//993px
+		width: 50%;
+	}
 	
 	// attempt at making the image responsive
 	// height: auto;

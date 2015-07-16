@@ -61,16 +61,16 @@ module.exports = app;
 
 
 //YELP SHIT
-//ANYTHING YOU WANT TO SHOW ON THE HOMEPAGE (PROCESS) DATA
+//ANYTHING YOU WANT TO SHOW ON THE RESULTS PAGE (PROCESS) DATA
 app.get("/",function(req,res) {
     var yelp = require("yelp").createClient({
-        consumer_key: "44dGAgblwMC4eiapEgv2Eg",
-        consumer_secret: "7cLJ2tyXnPmdvWDakkcyRTs4qYY",
-        token: "a85eWTlMIhs34Ehs-z9ZmPxrbrVPAMnv",
-        token_secret: "9qxs-Xd-d11WrjGd_96yQB-raQY"
+        consumer_key        : "7jcglOo2SxF1laGI5iG8ow",
+        consumer_secret     : "Hex0_XLTxe-Hem8CTXMS1KFXRrw",
+        token               : "7zFN8ztVIXXw5Z16y3dhXvirWf-_O2pD",
+        token_secret        : "124GcqDYRmUtzF-Tf9EtQseRoOo"
     });
 
-    res.render("index");
+    res.render("./bin/www");
 
     app.on('connection', function(data) {
         yelp.search({term: "restaurants", location: data['city'], deals_filter: true, limit: 9});

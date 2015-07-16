@@ -1,48 +1,39 @@
 <div class="row">
-    <div class="large-6 columns">
-        <div class="logNav">
+    <div class="small-12 columns social">
+        <div id="fb-root">
+        
             
-            <!-- Logout Button -->
-            <button 
-                id="logOut"
-                class="_4z_b left"
-            >Logout</button>
+            <div class="fb_like-share left">
+                <!-- Begin Facebook Like Button -->
+                <div
+                    class="fb-like left"
+                    data-share="true"
+                    
+                    data-width="300"
+                    data-show-faces="true">
+                </div>
+                <!-- End Facebook Like Button -->
+            </div>
             
             <!--
               Below we include the Login Button social plugin. This button uses
               the JavaScript SDK to present a graphical Login button that triggers
               the FB.login() function when clicked.
             -->
-        
-            <!-- Begin Facebook Login Button Code -->
-            <fb:login-button 
-                class="_4z_b left" 
-                scope="public_profile, email" 
-                onlogin="checkLoginState();"
-            ></fb:login-button>
-            <!-- End Facebook Login Button Code -->
             
-        </div>
-    </div>
-
-    <div class="large-4 columns">
-        <div class="profile"> 
-        
-            <!-- Begin Facebook Like Button -->
-            <div
-                class="fb-like right"
-                data-share="true"
-                data-width="300"
-                data-show-faces="true">
-            </div>
-            <!-- End Facebook Like Button -->
-        
-            <!-- Login status from Facebook -->
-            <div 
-                 id="status"
-                 class="right"
-             ></div>
-    
-        </div>
-    </div>
+            <div class="fb_login right">
+                <!-- Begin Facebook Login Button Code -->
+                <fb:login-button 
+                    class="fb-login-button right"
+                    data-max-rows="3"
+                    data-size="large"
+                    data-auto-logout-link="true"
+                    scope="public_profile, email" 
+                    onlogin="checkLoginState();"
+                ></fb:login-button>
+                <!-- End Facebook Login Button Code -->
+            </div><!-- data-show-faces="true" -->
+            
+        </div><!-- /Facebook root-div -->
+    </div> 
 </div>

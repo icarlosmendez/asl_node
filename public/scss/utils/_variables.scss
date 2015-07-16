@@ -4,20 +4,77 @@ $serif: ;
 $sans-serif: ;
 
 
-
 //######## COLORS #########//
 $primary-color: ;
 $secondary-color: ;
 $button-color: ;
+$green                 : #99CC33;
 
 //####### SIZES ##########//
 
 
 //###### BREAKPOINTS ######//
-$XS:    321px;  
-$S:     481px;
-$SM:    641px;   
-$M:     769px;
-$ML:    961px;     
-$L:     1025px;
-$XL:    1281px;
+
+$xsmall-screen          : 480px !default;
+$xsmall-screen-up       : 481px !default;
+
+$small-screen           : 600px !default;
+$small-screen-up        : 601px !default;
+
+$smallish-screen        : 640px !default;
+$smallish-screen-up     : 641px !default;
+
+$sMedium-screen         : 768px !default;
+$sMedium-screen-up      : 769px !default;
+
+$medium-screen          : 992px !default;
+$medium-screen-up       : 993px !default;
+
+$standard-screen        : 1024px !default;
+$standard-screen-up     : 1025px !default;
+
+$large-screen           : 1200px !default;
+$large-screen-up        : 1201px !default;
+
+$xlarge-screen          : 1440px !default;
+$xlarge-screen-up       : 1441px !default;
+
+
+// Media Queries
+
+$small-and-up           : "only screen and (min-width : #{$xsmall-screen-up})" !default;
+$smallish-and-up        : "only screen and (min-width : #{$small-screen-up})" !default;
+$sMedium-and-up         : "only screen and (min-width : #{$smallish-screen-up})" !default;
+$medium-and-up          : "only screen and (min-width : #{$sMedium-screen-up})" !default;
+$standard-and-up        : "only screen and (min-width : #{$medium-screen-up})" !default;
+$large-and-up           : "only screen and (min-width : #{$standard-screen-up})" !default;
+$xlarge-and-up          : "only screen and (min-width : #{$large-screen-up})" !default;
+
+$xsmall-and-down        : "only screen and (min-width : #{$xsmall-screen})" !default;
+$small-and-down         : "only screen and (max-width : #{$small-screen})" !default;
+$medium-and-down        : "only screen and (max-width : #{$medium-screen})" !default;
+$medium-only            : "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})" !default;
+
+
+// Media Query Starter Pack
+// Copy and paste into your styles
+// Use what you need, get rid of the rest!
+
+// @media #{$small-and-up} {		//481px
+
+// }
+// @media #{$smallish-and-up} {	    //601px
+
+// }
+// @media #{$sMedium-and-up} {		//641px
+
+// }
+// @media #{$medium-and-up} {		//769px
+
+// }
+// @media #{$large-and-up} {		//993px
+
+// }
+// @media #{$xlarge-and-up} {		//1025px
+
+// }

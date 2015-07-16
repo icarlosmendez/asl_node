@@ -26,9 +26,33 @@
     }
 }
 
+.social {
+    background-color: lightgreen;
+    margin: 1rem 0;
+}
 // This is the Facebook Like architecture 
 // including the buttons, the user pictures and the accompanying text
-.fb-like {
-    margin: 0.5rem 0;
+.fb_like-share {
+    // display: inline-block;
+    background-color: lightblue;
+    width: 50%;
+    margin: 0;
 }
 
+.fb_login {
+    // display: inline-block;
+    background-color: lightpink;
+    width: 50%;
+    margin: 0;
+}
+
+// This button launches the results page and displays the search results to the user
+.button-results {
+    background-color: $green;
+    color: white;
+    height: 2rem;
+    line-height: 2rem;
+    margin: 1rem auto 2rem;
+    padding: 1rem 12%;
+    border-radius: 0.25rem;
+}

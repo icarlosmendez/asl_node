@@ -1,7 +1,69 @@
 
+h1 {
+	font-size: 3rem;
+	margin: 0.67rem 0;
+	&.title {
+		// color: $primary-color;
+		// width: 100%;
+		// text-align: center;
+	}
+}
+h2 {
+	font-size: 2rem;
+    margin: 0.83rem 0;
+}
+h3 {
+	font-size: 1.5rem;
+    margin: 1rem 0;
+}
+h4 {
+	font-size: 1.25rem;
+	margin: 1.33rem 0;
+}
+h5 {
+	font-size: 1rem;
+	margin: 1.67rem 0;
+}
+h6 {
+	font-size: 0.75rem;
+	margin: 2.33rem 0;
+}
+
 p {
-	font-size: 1.125rem;
-	line-height: 2;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-weight: 300;	
+		
+}
+
+.spiel{
+	margin: 2rem 0;
+	p {
+		font-size: 1rem;
+		line-height: 1.6rem;
+		font-family: 'Alegreya Sans', sans-serif;
+		font-weight: 300;
+		text-align: center;
+	}
+	@media #{$small-and-up} {		//481px
+		p {
+			font-size: 1.125rem;
+		}
+	}
+	@media #{$smallish-and-up} {	//601px
+		margin: 2.5rem 0;
+		p {
+			font-size: 1.25rem;
+			line-height: 2rem;
+		}
+	}
+	@media #{$sMedium-and-up} {		//641px
+
+	}
+	@media #{$medium-and-up} {		//769px
+		margin: 5rem 0;
+	}
+	@media #{$large-and-up} {		//993px
+	
+	}
+	@media #{$xlarge-and-up} {		//1025px
+	
+	}
 }

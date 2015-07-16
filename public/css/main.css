@@ -6921,10 +6921,6 @@ label {
 .lines {
   margin-top: 1%; }
 
-#info {
-  text-align: center;
-  font-size: 2em; }
-
 .lead {
   color: #920f18; }
 
@@ -7004,7 +7000,15 @@ img {
   border: none; }
 
 .teaserImg-food {
+  width: 100%;
   margin: 15% auto; }
+  @media only screen and (min-width: 769px) {
+    .teaserImg-food {
+      width: 100%;
+      border-radius: 50%; } }
+  @media only screen and (min-width: 1025px) {
+    .teaserImg-food {
+      width: 50%; } }
 
 a[href^=tel] {
   border: 1px solid #ccc;
@@ -7023,77 +7027,64 @@ ul {
   list-style: none;
   padding-left: 0; }
 
-p {
-  font-size: 1.125rem;
-  line-height: 2;
-  font-family: 'Alegreya Sans', sans-serif;
-  font-weight: 300; }
+h1 {
+  font-size: 3rem;
+  margin: 0.67rem 0; }
+
+h2 {
+  font-size: 2rem;
+  margin: 0.83rem 0; }
+
+h3 {
+  font-size: 1.5rem;
+  margin: 1rem 0; }
+
+h4 {
+  font-size: 1.25rem;
+  margin: 1.33rem 0; }
+
+h5 {
+  font-size: 1rem;
+  margin: 1.67rem 0; }
+
+h6 {
+  font-size: 0.75rem;
+  margin: 2.33rem 0; }
+
+.spiel {
+  margin: 2rem 0; }
+  .spiel p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 300;
+    text-align: center; }
+  @media only screen and (min-width: 481px) {
+    .spiel p {
+      font-size: 1.125rem; } }
+  @media only screen and (min-width: 601px) {
+    .spiel {
+      margin: 2.5rem 0; }
+      .spiel p {
+        font-size: 1.25rem;
+        line-height: 2rem; } }
+  @media only screen and (min-width: 769px) {
+    .spiel {
+      margin: 5rem 0; } }
 
 header {
   background-image: url(../img/green-poly.png);
-  min-height: 50%; }
-  header h1 {
-    margin: 0;
-    padding: 0; }
+  margin-bottom: 1rem; }
 
-/*-- NAV BAR --*/
-._4z_b {
-  background-color: #95d43b;
-  color: white;
-  padding: 50px;
-  border-radius: 50%;
-  position: absolute;
-  top: 5%;
-  left: 85%;
-  font-family: 'Patua One', cursive;
-  font-size: 2em;
-  letter-spacing: 2px;
-  transition: all 0.5s ease;
-  text-decoration: none; }
+.logo {
+  width: 25%;
+  margin: 1rem; }
 
-#login:hover {
-  background-color: #4884de;
-  transition: all 0.5s ease; }
-
-#small-logo {
-  max-width: 100%;
-  position: relative;
-  bottom: 10px; }
-
-#searchbox {
-  float: left;
-  width: 30%;
-  padding: 5px;
-  margin-top: 5px;
-  margin-left: 50px; }
-
-#search {
-  width: 80%;
-  border: none;
-  padding: 5px; }
-
-#submit {
-  border: none;
-  padding: 5px;
-  background-color: #94d43b;
-  color: white; }
-
-#submit:hover {
-  background-color: #adf646; }
-
-#navbar {
-  text-align: center;
-  background-color: #558c03; }
-
-.profile {
-  float: left; }
-
-.fb:login-button {
-  margin-right: 20%; }
-
-#logOut {
-  margin-bottom: 0px;
-  margin-left: 20%; }
+.hide-text {
+  /* The Kellum Method of image replacement */
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: auto; }
 
 #divResults {
   background: url(../img/blue-poly.png); }
@@ -7103,18 +7094,23 @@ header {
 
 /* Gradient transparent - color - transparent */
 hr {
-  margin: 5px 0;
+  margin: 3rem 0;
   border: 0;
-  height: 5px;
+  height: 1px;
   background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent); }
 
-.footerLink {
-  margin-left: 40px; }
+.footerLink li {
+  display: inline;
+  margin: 0 20px; }
+  .footerLink li a {
+    height: 1.5rem;
+    line-height: 1.5rem;
+    margin: 1rem 0; }
 
 footer {
   background-color: #F5F5F5;
-  height: 50px;
-  line-height: 50px; }
+  min-height: 50px;
+  margin: 2rem 0 0; }
 
 .modal-dialog {
   margin-top: 10%;
@@ -7228,8 +7224,28 @@ footer {
     background-image: linear-gradient(to bottom, #8ed058, #7bb64b);
     border: 1px solid #26759E; }
 
-.fb-like {
-  margin: 0.5rem 0; }
+.social {
+  background-color: lightgreen;
+  margin: 1rem 0; }
+
+.fb_like-share {
+  background-color: lightblue;
+  width: 50%;
+  margin: 0; }
+
+.fb_login {
+  background-color: lightpink;
+  width: 50%;
+  margin: 0; }
+
+.button-results {
+  background-color: #99CC33;
+  color: white;
+  height: 2rem;
+  line-height: 2rem;
+  margin: 1rem auto 2rem;
+  padding: 1rem 12%;
+  border-radius: 0.25rem; }
 
 /*# sourceMappingURL=main.css.map */
 /*# sourceMappingURL=main.css.map */

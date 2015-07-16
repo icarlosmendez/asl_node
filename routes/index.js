@@ -6,12 +6,16 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Penny Pincher' });
 });
 
-router.get('/privacy', function(req, res, next) {
-  res.render('privacy', { title: 'Privacy' });
-});
-
 router.get('/welcome', function(req, res, next) {
   res.render('welcome', { title: 'Welcome' });
+});
+
+router.get('/search', function(req, res, next) {
+  res.render('search', { title: 'Search' });
+});
+
+router.get('/privacy', function(req, res, next) {
+  res.render('privacy', { title: 'Privacy' });
 });
 
 router.get('/tos', function(req, res, next) {
