@@ -113,39 +113,43 @@ gulp.task('tests', ['lint', 'test', 'coveralls']);
 // JS
 gulp.task('devlint', function() {
     return gulp.src([
+        'app.js',
         'public/js/gps.js',
-        'public/js/databse.js',
-        'public/js/fb_login.js'
+        'public/js/fb_login.js',
+        'routes/*.js'
         ])
         .pipe(jshint())
         .pipe(jshint.reporter('default'));
 });
 
-gulp.task('concatScripts', ['devlint'], function() {
-    return gulp.src([
-            'public/js/vendor/jquery.min.js',
-            'public/js/fb_login.js',
-            'public/js/databse.js'
-            //'public/js/gps.js'
-            ])
-        .pipe(maps.init())
-        .pipe(concat('app.js'))
-        .pipe(maps.write('./'))
-        .pipe(gulp.dest('public/js'));
+// gulp.task('concatScripts', ['devlint'], function() {
+//     return gulp.src([
+//             'public/js/vendor/jquery.min.js',
+//             'public/js/fb_login.js',
+//             'public/js/databse.js'
+//             //'public/js/gps.js'
+//             ])
+//         .pipe(maps.init())
+//         .pipe(concat('app.js'))
+//         .pipe(maps.write('./'))
+//         .pipe(gulp.dest('public/js'));
 
-});
+// });
 
-gulp.task('minifyScripts', ['concatScripts'], function() {
-    return gulp.src([
-        'public/js/fb_login',
-        'public/js/database.js',
-        'puclic/js/gps.js',
-        'public/js/app.js'
-        ])
-        .pipe(uglify())
-        .pipe(rename('app.min.js'))
-        .pipe(gulp.dest('public/js'));
-});
+// gulp.task('minifyScripts', ['concatScripts'], function() {
+//     return gulp.src([
+//         'public/js/fb_login',
+//         'public/js/database.js',
+//         'puclic/js/gps.js',
+//         'public/js/app.js',
+//         'routes/index.js',
+//         'routes/users.js',
+//         'app.js'
+//         ])
+//         .pipe(uglify())
+//         .pipe(rename('app.min.js'))
+//         .pipe(gulp.dest('public/js'));
+// });
 
 gulp.task('devScripts', ['devlint']);
 

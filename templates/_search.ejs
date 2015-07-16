@@ -1,1 +1,25 @@
-<div id="divResults"></div>
+<div class="row">
+    <% for(i=0; i<data.length; i++){ %>
+    <div class="large-4 medium-6 small-12 columns">
+        
+    <div class="large-12 medium-12 small-12 columns center">
+        <img src="<%= data[i].image_url %>">
+    </div>
+    
+    <h5 class="center"><%= data[i].name %></h5>
+    <hr>
+    
+    <img src="<%= data[i].rating_img_url_large %>"><br>
+    <a href="tel:<%= data[i].phone %>"><%= data[i].display_phone %></a></br>
+
+    <%= data[i].location.address[0] %></br>
+    <%= data[i].location.display_address[2] %></br>
+    <%= data[i].deals[0].title %></br>
+    <%= data[i].deals[0].what_you_get %></br>
+
+    <hr>
+
+    </div>
+
+    <% } %>
+</div>
