@@ -1,4 +1,29 @@
 
+<div id="divResults">
+
+    <div class="row">
+
+        <% for(var i=0; i < data.businesses.length; i++) { %>
+            
+            <div class="large-3 medium-6 small-12 columns center">
+                <div class="tile left">    
+                    <div class="center">
+                        <img src="<%= data.businesses[i].image_url %>">
+                    
+                        <h5 class="center"><%= data.businesses[i].name %></h5>
+                        
+                        <img src="<%= data.businesses[i].rating_img_url_large %>"><br>
+                        <a href="tel:<%= data.businesses[i].phone %>">
+                            <%= data.businesses[i].display_phone %>
+                        </a></br>
+                    
+                        <%= data.businesses[i].location.display_address[2] %>
+                    </div>
+                </div>
+            </div>
+        <% } %>
+    </div><hr>
+</div>
 
 
-<%= data %>
+<%= /* JSON.stringify(data, null, '\t') */ %>

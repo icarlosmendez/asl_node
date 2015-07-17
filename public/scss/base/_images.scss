@@ -12,19 +12,19 @@ img {
 		width: 45%;	
 		}	
 	@media#{$smallish-and-up}{//641px
-	  	width: 20%; 
+	  	width: 50%; 
        
 	}
 	@media #{$medium-and-up} {//769px
-      	width: 25%; 
+      	width: 60%; 
       	border-radius: 50%;
 	}
 	@media#{$standard-and-up}{//1025px
-		width: 70%;
+		width: 80%;
 		border-radius: 50%;
 	}
 	@media #{$large-and-up} {//1201px
-		width: 70%;
+		width: 80%;
 	}
 	// attempt at making the image responsive
 	// height: auto;

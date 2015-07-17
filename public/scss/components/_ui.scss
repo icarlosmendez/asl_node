@@ -1,6 +1,7 @@
 
 // Primary Button styles. Used for login/logout
 // The classname is an attempt at overriding facebook styles
+// These buttons no longer exist.
 ._4z_b {
     display:inline-block;
     padding: 10px;
@@ -26,25 +27,29 @@
     }
 }
 
+/* ======================= Social Components ======================= */
+
 .social {
-    background-color: lightgreen;
+    // background-color: lightgreen;
     margin: 1rem 0;
 }
 // This is the Facebook Like architecture 
 // including the buttons, the user pictures and the accompanying text
 .fb_like-share {
     // display: inline-block;
-    background-color: lightblue;
+    // background-color: lightblue;
     width: 50%;
     margin: 0;
 }
 
 .fb_login {
     // display: inline-block;
-    background-color: lightpink;
+    // background-color: lightpink;
     width: 50%;
     margin: 0;
 }
+
+
 
 // This button launches the results page and displays the search results to the user
 .button-results {

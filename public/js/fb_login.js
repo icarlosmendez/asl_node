@@ -139,6 +139,26 @@ function status(response) {
                             city        : window.data[3],
                             region      : window.data[4]
             });
+            
+            // Retrieve newest key as it's added to database
+            var key;
+            myDataRef
+                .orderByChild("timestamp")
+                .limitToLast(1)
+                .on("child_added", function(snapshot) {
+                    var key = snapshot.key();
+                    console.log("This is your unique database entry key " + key);
+                    return key;
+                });
+
+            // Use that key to get the city of the user
+            // myDataRef
+            //     .orderByChild(key)
+            //     .equalTo(key)
+            //     .on("child_added", function(snapshot) {
+            //         var city = snapshot.city;
+            //         console.log("This is your city " + city);
+            //     });
         }
         
         if(response.status === 'connected') {
@@ -158,6 +178,7 @@ function status(response) {
                             city        : window.data[3],
                             region      : window.data[4]
             });
+            
             // This just validates the date function
             console.log(date);
         }
