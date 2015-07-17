@@ -25,12 +25,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 // define file paths as variables for use by express
 var routes = require('./routes/index');
 var users = require('./routes/users');
-var yelp = require('./routes/yelp');
 
 // call the use methods on the variables just defined
 app.use('/', routes);
 app.use('/users', users);
-app.use('/yelp', yelp);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -46,22 +44,22 @@ app.use(function(req, res, next) {
 if (app.get('env') === 'development') {
   app.use(function(err, req, res, next) {
     res.status(err.status || 500);
-    res.render('error', {
+    res.render('error ', {
       message: err.message,
       error: err
     });
   });
 }
 
-// production error handler
-// no stacktraces leaked to user
-app.use(function(err, req, res, next) {
-  res.status(err.status || 500);
-  res.render('error', {
-    message: err.message,
-    error: {}
-  });
-});
+// // production error handler
+// // no stacktraces leaked to user
+// app.use(function(err, req, res, next) {
+//   res.status(err.status || 500);
+//   res.render('error', {
+//     message: err.message,
+//     error: {}
+//   });
+// });
 
 
 // //YELP SHIT
@@ -150,5 +148,9 @@ app.use(function(err, req, res, next) {
 //   });
 
 // };
+
+
+
+
 
 module.exports = app;

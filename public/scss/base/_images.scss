@@ -5,22 +5,32 @@ img {
 .teaserImg-food {
 	// background-image: url("../img/food.png");  
 	// standard static sizing dimensions
-	
-	width: 100%;
-	margin: 0;
-	
-	
-	@media #{$medium-and-up} {	//601px
-       width: 50%; 
-       border-radius: 50%;
+		width: 100%;
+		margin: 0;
+		border-radius: 50%;
+	@media#{$small-and-up}{//601px
+		width: 45%;	
+		}	
+	@media#{$smallish-and-up}{//641px
+	  	width: 20%; 
+       
 	}
-	@media #{$large-and-up} {//993px
-		width: 75%;
+	@media #{$medium-and-up} {//769px
+      	width: 25%; 
+      	border-radius: 50%;
 	}
-	
+	@media#{$standard-and-up}{//1025px
+		width: 70%;
+		border-radius: 50%;
+	}
+	@media #{$large-and-up} {//1201px
+		width: 70%;
+	}
 	// attempt at making the image responsive
 	// height: auto;
 	// max-width: 100%;
-	
 	margin: 15% auto;
+}
+.teaserImg-rect{
+	display:none;
 }

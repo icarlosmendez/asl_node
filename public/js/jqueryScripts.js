@@ -13,12 +13,13 @@ $( window ).resize(function() {
        $('.teaserImg-rect').show();
     } /* end smallest screen */
     /* if is larger than 481px */
-    if (responsive_viewport > 550) {
-        $('.teaserImg-food').show();
-        $('.teaserImg-rect').hide();
+    if (responsive_viewport > 650) {
+       
     } /* end larger than 481px */
     /* if is above or equal to 768px */
     if (responsive_viewport >= 768) {
+         $('.teaserImg-food').show();
+        $('.teaserImg-rect').hide();
     }
     /* off the bat large screen actions */
     if (responsive_viewport > 1030) {
