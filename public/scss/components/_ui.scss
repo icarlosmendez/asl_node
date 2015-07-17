@@ -38,19 +38,20 @@
 .fb_like-share {
     // display: inline-block;
     // background-color: lightblue;
-    width: 50%;
+    width: 75%;
     margin: 0;
+    overflow: auto;
 }
 
 .fb_login {
     // display: inline-block;
     // background-color: lightpink;
-    width: 50%;
+    width: 25%;
     margin: 0;
 }
 
 
-
+/* ======================= Results Button ======================= */
 // This button launches the results page and displays the search results to the user
 .button-results {
     background-color: $green;
@@ -58,6 +59,77 @@
     height: 2rem;
     line-height: 2rem;
     margin: 1rem auto 2rem;
-    padding: 1rem 12%;
+    padding: 1rem 33%;
     border-radius: 0.25rem;
+    @media #{$small-and-up} {		//481px
+        
+    }
+    @media #{$smallish-and-up} {	//601px
+        padding: 1rem 25%;
+    }
+    @media #{$sMedium-and-up} {		//641px
+        
+    }
+    @media #{$medium-and-up} {		//769px
+        padding: 1rem 12%;
+    }
+    @media #{$large-and-up} {		//993px
+       
+    }
+    @media #{$xlarge-and-up} {		//1025px
+
+    }
 }
+
+
+/* ======================= Restaurant Tiles ======================= */
+
+.tile {
+    background-color: #fff;
+    width: 95%;
+    height: 350px;
+    border-radius: 0.125rem;
+    padding: 0.5rem 0;
+    margin: 1.5rem auto;
+    float: left;
+    
+    @media #{$small-and-up} {		//481px
+        
+    }
+    @media #{$smallish-and-up} {	//601px
+        
+    }
+    @media #{$sMedium-and-up} {		//641px
+        max-width: 350px;
+    }
+    @media #{$medium-and-up} {		//769px
+       
+    }
+    @media #{$large-and-up} {		//993px
+        
+    }
+    @media #{$xlarge-and-up} {		//1025px
+
+    }
+}
+
+.tile-bus_name {
+    padding: 0;
+    margin: 0;
+}
+
+.tile-bus_addr {
+    padding: 0;
+    margin: 0;
+}
+
+.tile-bus_phone {
+    padding: 0;
+    margin: 5rem;
+}
+
+.tile-rating_stars {
+    
+}
+
+.tile-img {} // see base/images.scss

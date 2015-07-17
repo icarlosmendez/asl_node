@@ -1,6 +1,7 @@
 
-console.log("This is John");
-
+// console.log("This is John");
+  $('.teaserImg-round').show();
+  $('.teaserImg-rect').hide();
 //This switches the food image
 $( window ).resize(function() { 
     /* getting viewport width */
@@ -8,20 +9,21 @@ $( window ).resize(function() {
     var responsive_viewport = $(window).width();
        
     /* if is below 481px */
-    if (responsive_viewport <= 550) {
-       $('.teaserImg-food').hide();
-       $('.teaserImg-rect').show();
+    if (responsive_viewport < 601) {
+        $('.teaserImg-round').hide();
+        $('.teaserImg-rect').show();
     } /* end smallest screen */
     /* if is larger than 481px */
-    if (responsive_viewport > 650) {
-       
+    if (responsive_viewport > 600) {
+        $('.teaserImg-rect').hide();
+        $('.teaserImg-round').show();
     } /* end larger than 481px */
     /* if is above or equal to 768px */
-    if (responsive_viewport >= 768) {
-         $('.teaserImg-food').show();
-        $('.teaserImg-rect').hide();
-    }
-    /* off the bat large screen actions */
-    if (responsive_viewport > 1030) {
-    }
+    // if (responsive_viewport >= 768) {
+    //     $('.teaserImg-food').show();
+    // }
+    /* large screen actions */
+    // if (responsive_viewport > 1030) {
+    //     $('.teaserImg-food').show();
+    // }
 });

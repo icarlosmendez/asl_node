@@ -5,20 +5,33 @@
 
         <% for(var i=0; i < data.businesses.length; i++) { %>
             
-            <div class="large-3 medium-6 small-12 columns center">
-                <div class="tile left">    
-                    <div class="center">
+            <div class="large-3 medium-6 small-12 columns">
+                <div class="tile center">    
+                    <!-- Business name -->
+                    <span>
+                        <h5 class="tile-bus_name"><%= data.businesses[i].name %></h5>
+                    </span>
+                    <!-- Display image -->
+                    <span class="tile-img">
                         <img src="<%= data.businesses[i].image_url %>">
-                    
-                        <h5 class="center"><%= data.businesses[i].name %></h5>
-                        
-                        <img src="<%= data.businesses[i].rating_img_url_large %>"><br>
+                    </span><br>
+                    <!-- Business address -->
+                    <span class="tile-bus_addr">
+                        <%= data.businesses[i].location.display_address[0] %><br>
+                        <%= data.businesses[i].location.display_address[1] %><br>
+                        <%= data.businesses[i].location.display_address[2] %>
+                    </span><br>
+                    <!-- Business phone -->
+                    <span class="tile-bus_phone">
                         <a href="tel:<%= data.businesses[i].phone %>">
                             <%= data.businesses[i].display_phone %>
-                        </a></br>
+                        </a>
+                    </span><br>
+                    <!-- Yelp rating stars -->
+                    <span class="tile-rating_stars">
+                        <img src="<%= data.businesses[i].rating_img_url_large %>">
+                    </span>
                     
-                        <%= data.businesses[i].location.display_address[2] %>
-                    </div>
                 </div>
             </div>
         <% } %>

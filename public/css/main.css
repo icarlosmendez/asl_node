@@ -6999,31 +6999,36 @@ form h3 {
 img {
   border: none; }
 
-.teaserImg-food {
+.teaserImg-round {
   width: 100%;
-  margin: 0;
+  margin: 15% auto;
   border-radius: 50%;
-  margin: 15% auto; }
+  display: none; }
   @media only screen and (min-width: 481px) {
-    .teaserImg-food {
-      width: 45%; } }
+    .teaserImg-round {
+      width: 10%;
+      display: block;
+      margin: 0 auto 15px auto; } }
   @media only screen and (min-width: 601px) {
-    .teaserImg-food {
+    .teaserImg-round {
       width: 50%; } }
   @media only screen and (min-width: 769px) {
-    .teaserImg-food {
+    .teaserImg-round {
       width: 60%;
       border-radius: 50%; } }
   @media only screen and (min-width: 993px) {
-    .teaserImg-food {
+    .teaserImg-round {
       width: 80%;
       border-radius: 50%; } }
   @media only screen and (min-width: 1025px) {
-    .teaserImg-food {
+    .teaserImg-round {
       width: 80%; } }
 
 .teaserImg-rect {
-  display: none; }
+  margin: 1rem auto; }
+
+.tile-img {
+  margin: 0.25rem; }
 
 a[href^=tel] {
   border: 1px solid #ccc;
@@ -7240,28 +7245,59 @@ footer {
     background-image: linear-gradient(to bottom, #8ed058, #7bb64b);
     border: 1px solid #26759E; }
 
+/* ======================= Social Components ======================= */
 .social {
-  background-color: lightgreen;
   margin: 1rem 0; }
 
 .fb_like-share {
-  background-color: lightblue;
-  width: 50%;
-  margin: 0; }
+  width: 75%;
+  margin: 0;
+  overflow: auto; }
 
 .fb_login {
-  background-color: lightpink;
-  width: 50%;
+  width: 25%;
   margin: 0; }
 
+/* ======================= Results Button ======================= */
 .button-results {
   background-color: #99CC33;
   color: white;
   height: 2rem;
   line-height: 2rem;
   margin: 1rem auto 2rem;
-  padding: 1rem 12%;
+  padding: 1rem 33%;
   border-radius: 0.25rem; }
+  @media only screen and (min-width: 601px) {
+    .button-results {
+      padding: 1rem 25%; } }
+  @media only screen and (min-width: 769px) {
+    .button-results {
+      padding: 1rem 12%; } }
+
+/* ======================= Restaurant Tiles ======================= */
+.tile {
+  background-color: #fff;
+  width: 95%;
+  height: 350px;
+  border-radius: 0.125rem;
+  padding: 0.5rem 0;
+  margin: 1.5rem auto;
+  float: left; }
+  @media only screen and (min-width: 641px) {
+    .tile {
+      max-width: 350px; } }
+
+.tile-bus_name {
+  padding: 0;
+  margin: 0; }
+
+.tile-bus_addr {
+  padding: 0;
+  margin: 0; }
+
+.tile-bus_phone {
+  padding: 0;
+  margin: 5rem; }
 
 /*# sourceMappingURL=main.css.map */
 /*# sourceMappingURL=main.css.map */

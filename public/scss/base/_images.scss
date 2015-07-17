@@ -2,35 +2,40 @@ img {
 	border: none;
 }
 
-.teaserImg-food {
-	// background-image: url("../img/food.png");  
-	// standard static sizing dimensions
+.teaserImg-round {  
+	// Base styles are for mobile
 		width: 100%;
-		margin: 0;
+		margin: 15% auto;
 		border-radius: 50%;
-	@media#{$small-and-up}{//601px
-		width: 45%;	
-		}	
-	@media#{$smallish-and-up}{//641px
+		display: none;
+	@media#{$small-and-up} {//601px
+		width: 10%;
+		display: block;
+		margin: 0 auto 15px auto;
+	}	
+	@media#{$smallish-and-up} {	//641px
 	  	width: 50%; 
-       
 	}
-	@media #{$medium-and-up} {//769px
+	@media #{$medium-and-up} {	//769px
       	width: 60%; 
       	border-radius: 50%;
 	}
-	@media#{$standard-and-up}{//1025px
+	@media#{$standard-and-up} {	//1025px
 		width: 80%;
 		border-radius: 50%;
 	}
-	@media #{$large-and-up} {//1201px
+	@media #{$large-and-up} {	//1201px
 		width: 80%;
 	}
-	// attempt at making the image responsive
-	// height: auto;
-	// max-width: 100%;
-	margin: 15% auto;
 }
+
 .teaserImg-rect{
-	display:none;
+	margin: 1rem auto;
+	@media#{$small-and-up}{
+	// display: none;
+	}
+}
+
+.tile-img {
+	margin: 0.25rem;
 }
