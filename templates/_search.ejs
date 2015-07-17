@@ -5,15 +5,15 @@
 
         <% for(var i=0; i < data.businesses.length; i++) { %>
             
-            <div class="large-3 medium-6 small-12 columns">
-                <div class="tile center">    
+            <div class="large-4 medium-6 small-12 columns center">
+                <div class="tile">    
                     <!-- Business name -->
                     <span>
                         <h5 class="tile-bus_name"><%= data.businesses[i].name %></h5>
                     </span>
                     <!-- Display image -->
-                    <span class="tile-img">
-                        <img src="<%= data.businesses[i].image_url %>">
+                    <span>
+                        <img class="tile-img"src="<%= data.businesses[i].image_url %>">
                     </span><br>
                     <!-- Business address -->
                     <span class="tile-bus_addr">
@@ -21,16 +21,16 @@
                         <%= data.businesses[i].location.display_address[1] %><br>
                         <%= data.businesses[i].location.display_address[2] %>
                     </span><br>
-                    <!-- Business phone -->
-                    <span class="tile-bus_phone">
-                        <a href="tel:<%= data.businesses[i].phone %>">
-                            <%= data.businesses[i].display_phone %>
-                        </a>
-                    </span><br>
                     <!-- Yelp rating stars -->
                     <span class="tile-rating_stars">
                         <img src="<%= data.businesses[i].rating_img_url_large %>">
                     </span>
+                    <!-- Business phone -->
+                    <span class="tile-bus_phone center">
+                        <a href="tel:<%= data.businesses[i].phone %>">
+                            <%= data.businesses[i].display_phone %>
+                        </a>
+                    </span><br>
                     
                 </div>
             </div>

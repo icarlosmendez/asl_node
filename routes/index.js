@@ -40,7 +40,7 @@ router.get('/search', function(req, res, next) {
         term                : "restaurants", 
         location            : "Orlando", 
         deals_filter        : true, 
-        limit               : 9
+        limit               : 12
         
     }, function(error, data) {
         console.log(error);

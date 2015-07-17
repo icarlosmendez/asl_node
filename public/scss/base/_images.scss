@@ -8,24 +8,33 @@ img {
 		margin: 15% auto;
 		border-radius: 50%;
 		display: none;
+	@media only screen and (min-width : 601px) and (max-width : 641px) {
+		float: left;
+	}
 	@media#{$small-and-up} {//601px
-		width: 10%;
+		width: 35%;
 		display: block;
-		margin: 0 auto 15px auto;
+		margin: 0 auto 15px;
+		
 	}	
 	@media#{$smallish-and-up} {	//641px
-	  	width: 50%; 
+	  	width: 35%;
+	  	margin: auto;
+	  	
+	  	
 	}
 	@media #{$medium-and-up} {	//769px
-      	width: 60%; 
+      	width: 35%; 
       	border-radius: 50%;
+      	
 	}
 	@media#{$standard-and-up} {	//1025px
-		width: 80%;
+		width: 30%;
 		border-radius: 50%;
+		
 	}
 	@media #{$large-and-up} {	//1201px
-		width: 80%;
+		width: 30%;
 	}
 }
 
@@ -37,5 +46,6 @@ img {
 }
 
 .tile-img {
-	margin: 0.25rem;
+	border-radius: 50%;
+	margin: 0.5rem;
 }

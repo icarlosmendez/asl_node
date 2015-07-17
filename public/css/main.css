@@ -7004,31 +7004,36 @@ img {
   margin: 15% auto;
   border-radius: 50%;
   display: none; }
+  @media only screen and (min-width: 601px) and (max-width: 641px) {
+    .teaserImg-round {
+      float: left; } }
   @media only screen and (min-width: 481px) {
     .teaserImg-round {
-      width: 10%;
+      width: 35%;
       display: block;
-      margin: 0 auto 15px auto; } }
+      margin: 0 auto 15px; } }
   @media only screen and (min-width: 601px) {
     .teaserImg-round {
-      width: 50%; } }
+      width: 35%;
+      margin: auto; } }
   @media only screen and (min-width: 769px) {
     .teaserImg-round {
-      width: 60%;
+      width: 35%;
       border-radius: 50%; } }
   @media only screen and (min-width: 993px) {
     .teaserImg-round {
-      width: 80%;
+      width: 30%;
       border-radius: 50%; } }
   @media only screen and (min-width: 1025px) {
     .teaserImg-round {
-      width: 80%; } }
+      width: 30%; } }
 
 .teaserImg-rect {
   margin: 1rem auto; }
 
 .tile-img {
-  margin: 0.25rem; }
+  border-radius: 50%;
+  margin: 0.5rem; }
 
 a[href^=tel] {
   border: 1px solid #ccc;
@@ -7276,28 +7281,41 @@ footer {
 
 /* ======================= Restaurant Tiles ======================= */
 .tile {
+  position: relative;
   background-color: #fff;
   width: 95%;
-  height: 350px;
+  height: 375px;
   border-radius: 0.125rem;
-  padding: 0.5rem 0;
+  padding: 0.5rem;
   margin: 1.5rem auto;
-  float: left; }
-  @media only screen and (min-width: 641px) {
-    .tile {
-      max-width: 350px; } }
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5); }
 
 .tile-bus_name {
+  display: block;
   padding: 0;
   margin: 0; }
 
 .tile-bus_addr {
+  display: block;
   padding: 0;
   margin: 0; }
 
 .tile-bus_phone {
+  position: absolute;
+  bottom: 1%;
+  left: 0;
+  right: 0;
+  display: block;
   padding: 0;
-  margin: 5rem; }
+  margin: 1rem auto; }
+
+.tile-rating_stars {
+  position: absolute;
+  bottom: 15%;
+  left: 0;
+  right: 0;
+  display: block;
+  margin: 1rem auto; }
 
 /*# sourceMappingURL=main.css.map */
 /*# sourceMappingURL=main.css.map */

@@ -85,13 +85,14 @@
 /* ======================= Restaurant Tiles ======================= */
 
 .tile {
+    position: relative;
     background-color: #fff;
     width: 95%;
-    height: 350px;
+    height: 375px;
     border-radius: 0.125rem;
-    padding: 0.5rem 0;
+    padding: 0.5rem;
     margin: 1.5rem auto;
-    float: left;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, .5);
     
     @media #{$small-and-up} {		//481px
         
@@ -100,7 +101,7 @@
         
     }
     @media #{$sMedium-and-up} {		//641px
-        max-width: 350px;
+        
     }
     @media #{$medium-and-up} {		//769px
        
@@ -114,22 +115,34 @@
 }
 
 .tile-bus_name {
+    display: block;
     padding: 0;
     margin: 0;
 }
 
 .tile-bus_addr {
+    display: block;
     padding: 0;
     margin: 0;
 }
 
 .tile-bus_phone {
+    position: absolute;
+    bottom: 1%;
+    left: 0;
+    right: 0;
+    display: block;
     padding: 0;
-    margin: 5rem;
+    margin: 1rem auto;
 }
 
 .tile-rating_stars {
-    
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+    right: 0;
+    display: block;
+    margin: 1rem auto;
 }
 
 .tile-img {} // see base/images.scss
