@@ -7004,29 +7004,11 @@ img {
   margin: 15% auto;
   border-radius: 50%;
   display: none; }
-  @media only screen and (min-width: 601px) and (max-width: 641px) {
-    .teaserImg-round {
-      float: left; } }
-  @media only screen and (min-width: 481px) {
-    .teaserImg-round {
-      width: 35%;
-      display: block;
-      margin: 0 auto 15px; } }
   @media only screen and (min-width: 601px) {
     .teaserImg-round {
-      width: 35%;
-      margin: auto; } }
-  @media only screen and (min-width: 769px) {
-    .teaserImg-round {
-      width: 35%;
-      border-radius: 50%; } }
-  @media only screen and (min-width: 993px) {
-    .teaserImg-round {
       width: 30%;
-      border-radius: 50%; } }
-  @media only screen and (min-width: 1025px) {
-    .teaserImg-round {
-      width: 30%; } }
+      margin: 5% 2.5%;
+      float: left; } }
 
 .teaserImg-rect {
   margin: 1rem auto; }
@@ -7076,26 +7058,34 @@ h6 {
   font-size: 0.75rem;
   margin: 2.33rem 0; }
 
-.spiel {
-  margin: 2rem 0; }
+.spiel p {
+  margin: 1rem 0;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 300;
+  text-align: center; }
+
+@media only screen and (min-width: 481px) {
   .spiel p {
-    font-size: 1rem;
-    line-height: 1.6rem;
-    font-family: 'Alegreya Sans', sans-serif;
-    font-weight: 300;
-    text-align: center; }
-  @media only screen and (min-width: 481px) {
+    font-size: 1.125rem; } }
+
+@media only screen and (min-width: 601px) {
+  .spiel {
+    margin: 3.5rem 0; }
     .spiel p {
-      font-size: 1.125rem; } }
-  @media only screen and (min-width: 601px) {
-    .spiel {
-      margin: 2.5rem 0; }
-      .spiel p {
-        font-size: 1.25rem;
-        line-height: 2rem; } }
-  @media only screen and (min-width: 769px) {
-    .spiel {
-      margin: 5rem 0; } }
+      font-size: 1.25rem;
+      line-height: 2rem;
+      width: 60%;
+      float: left; } }
+
+@media only screen and (min-width: 769px) {
+  .spiel {
+    margin: 5rem 0 0; } }
+
+@media only screen and (min-width: 1025px) {
+  .spiel {
+    margin: 6rem 0 0; } }
 
 header {
   background-image: url(../img/green-poly.png);
@@ -7125,6 +7115,22 @@ hr {
   background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent); }
 
 /*Div on homepage with food picture*/
+.left-third {
+  width: 50%;
+  margin: 1rem auto; }
+
+.left-two_thirds {
+  width: 50%;
+  margin: 1rem auto; }
+
+.right-third {
+  width: 50%;
+  margin: 1rem auto; }
+
+.right-two_thirds {
+  width: 50%;
+  margin: 1rem auto; }
+
 .footerLink li {
   display: inline;
   margin: 0 20px; }

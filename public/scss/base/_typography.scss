@@ -34,8 +34,8 @@ p {
 }
 
 .spiel{
-	margin: 2rem 0;
 	p {
+		margin: 1rem 0;
 		font-size: 1rem;
 		line-height: 1.6rem;
 		font-family: 'Alegreya Sans', sans-serif;
@@ -48,20 +48,22 @@ p {
 		}
 	}
 	@media #{$smallish-and-up} {	//601px
-		margin: 2.5rem 0;
+		margin: 3.5rem 0;
 		p {
 			font-size: 1.25rem;
 			line-height: 2rem;
+			width: 60%;
+			float: left;
 		}
 	}
 	@media #{$sMedium-and-up} {		//641px
 
 	}
 	@media #{$medium-and-up} {		//769px
-		margin: 5rem 0;
+		margin: 5rem 0 0;
 	}
 	@media #{$large-and-up} {		//993px
-	
+		margin: 6rem 0 0;
 	}
 	@media #{$xlarge-and-up} {		//1025px
 	
