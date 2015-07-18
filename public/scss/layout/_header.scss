@@ -1,7 +1,7 @@
 header {
 	background-image: url(../img/green-poly.png);
 	// min-height: 50%;
-	margin-bottom: 1rem;
+	// margin-bottom: 1rem;
 	
 	@media #{$small-and-up} {		//481px
 	
@@ -24,7 +24,7 @@ header {
 }
 
 .logo{
-	width: 25%;
+	width: 12.5%;
 	margin: 1rem;
 	@media #{$small-and-up} {		//481px
 	

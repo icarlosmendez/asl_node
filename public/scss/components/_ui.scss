@@ -90,28 +90,9 @@
     width: 95%;
     height: 375px;
     border-radius: 0.125rem;
-    padding: 0.5rem;
+    padding: 1rem;
     margin: 1.5rem auto;
     box-shadow: 2px 4px 10px rgba(0, 0, 0, .5);
-    
-    @media #{$small-and-up} {		//481px
-        
-    }
-    @media #{$smallish-and-up} {	//601px
-        
-    }
-    @media #{$sMedium-and-up} {		//641px
-        
-    }
-    @media #{$medium-and-up} {		//769px
-       
-    }
-    @media #{$large-and-up} {		//993px
-        
-    }
-    @media #{$xlarge-and-up} {		//1025px
-
-    }
 }
 
 .tile-bus_name {

@@ -1,9 +1,20 @@
-#divResults {
-	background: url(../img/blue-poly.png);
+
+/*  Flex box code that makes the sticky footer possible */
+.content {
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    min-height: 100vh;
+    flex-direction: column;
+}
+main {
+    flex: 1 0 auto;
 }
 
-.center {
-	text-align: center;
+#divResults {
+	background: url(../img/blue-poly.png);
 }
 
 /* Gradient transparent - color - transparent */
@@ -13,12 +24,9 @@ hr {
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
-/*Div on homepage with food picture*/
-#teaserPic{
-//     	@media#{$smallish-and-up}{//641px
-// 	  	width: 20%; 
-       
-// 	}
+
+.center {
+    text-align: center;
 }
 
 .left-third {

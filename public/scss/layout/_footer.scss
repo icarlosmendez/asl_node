@@ -1,12 +1,16 @@
 .footerLink {
-    
+    margin: 0;
+    padding: 0;
+    ul {
+        
+    }
     li {
         display: inline;
         margin: 0 20px;
         a {
             height: 1.5rem;
             line-height: 1.5rem;
-            margin: 1rem 0;
+            // margin: 1rem 0;
         }
     }
     @media #{$small-and-up} {		//481px
@@ -32,6 +36,11 @@
 footer{
     background-color:#F5F5F5;
     min-height: 50px;
-    margin: 2rem 0 0;
+    padding: 1rem 0;
 }
 
+.copyright {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 200;
+}

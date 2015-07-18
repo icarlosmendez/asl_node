@@ -7015,7 +7015,7 @@ img {
 
 .tile-img {
   border-radius: 50%;
-  margin: 0.5rem; }
+  margin: 1rem; }
 
 a[href^=tel] {
   border: 1px solid #ccc;
@@ -7088,11 +7088,10 @@ h6 {
     margin: 6rem 0 0; } }
 
 header {
-  background-image: url(../img/green-poly.png);
-  margin-bottom: 1rem; }
+  background-image: url(../img/green-poly.png); }
 
 .logo {
-  width: 25%;
+  width: 12.5%;
   margin: 1rem; }
 
 .hide-text {
@@ -7101,11 +7100,28 @@ header {
   white-space: nowrap;
   overflow: auto; }
 
+/*  Flex box code that makes the sticky footer possible */
+.content {
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  min-height: 100vh;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+main {
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto; }
+
 #divResults {
   background: url(../img/blue-poly.png); }
-
-.center {
-  text-align: center; }
 
 /* Gradient transparent - color - transparent */
 hr {
@@ -7114,7 +7130,9 @@ hr {
   height: 1px;
   background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent); }
 
-/*Div on homepage with food picture*/
+.center {
+  text-align: center; }
+
 .left-third {
   width: 50%;
   margin: 1rem auto; }
@@ -7131,18 +7149,25 @@ hr {
   width: 50%;
   margin: 1rem auto; }
 
-.footerLink li {
-  display: inline;
-  margin: 0 20px; }
-  .footerLink li a {
-    height: 1.5rem;
-    line-height: 1.5rem;
-    margin: 1rem 0; }
+.footerLink {
+  margin: 0;
+  padding: 0; }
+  .footerLink li {
+    display: inline;
+    margin: 0 20px; }
+    .footerLink li a {
+      height: 1.5rem;
+      line-height: 1.5rem; }
 
 footer {
   background-color: #F5F5F5;
   min-height: 50px;
-  margin: 2rem 0 0; }
+  padding: 1rem 0; }
+
+.copyright {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 200; }
 
 .modal-dialog {
   margin-top: 10%;
@@ -7292,7 +7317,7 @@ footer {
   width: 95%;
   height: 375px;
   border-radius: 0.125rem;
-  padding: 0.5rem;
+  padding: 1rem;
   margin: 1.5rem auto;
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5); }
 
