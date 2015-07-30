@@ -1,7 +1,7 @@
 header {
 	background-image: url(../img/green-poly.png);
-	// min-height: 50%;
-	// margin-bottom: 1rem;
+	border-bottom: 1px solid #fff;
+	box-shadow: 0 5px 10px -5px rgba(0, 0, 0, .5);
 	
 	@media #{$small-and-up} {		//481px
 	

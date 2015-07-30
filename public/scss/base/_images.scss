@@ -4,23 +4,21 @@ img {
 
 .teaserImg-round {  
 	// Base styles are for mobile
-		width: 100%;
-		margin: 15% auto;
-		border-radius: 50%;
-		display: none;
+	border-radius: 50%;
+	// width: 100%;
+	margin: 0.5rem auto;
+	// display: none;
 		
 	@media#{$small-and-up} {	//481px
-		// width: 35%;
-		// display: block;
-		// margin: 0 auto 15px;
+		
 	}	
 	@media#{$smallish-and-up} {	//601px
 	  	width: 30%;
-	  	margin: 5% 2.5%;
+	  	margin: 0.5rem 2rem 2rem 1rem;
 	  	float: left;
 	}
 	@media #{$medium-and-up} {	//769px
-      	 
+      	 margin: 0.5rem 2.5rem 2rem 1rem;
 	}
 	@media#{$standard-and-up} {	//992px
 		
@@ -31,9 +29,25 @@ img {
 }
 
 .teaserImg-rect{
-	margin: 1rem auto;
-	@media#{$small-and-up}{
-	// display: none;
+	margin: 0 auto 1rem;
+	
+	@media #{$small-and-up} {		//481px
+		margin: 0.5rem auto 1rem;
+	}
+	@media #{$smallish-and-up} {	//601px
+		margin: 1rem auto;
+	}
+	@media #{$sMedium-and-up} {		//641px
+	
+	}
+	@media #{$medium-and-up} {		//769px
+	
+	}
+	@media #{$large-and-up} {		//993px
+	
+	}
+	@media #{$xlarge-and-up} {		//1025px
+	
 	}
 }
 

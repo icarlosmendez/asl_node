@@ -30,40 +30,40 @@ h6 {
 }
 
 p {
-		
+	padding: 0;
+	margin: 0;
 }
 
-.spiel{
-	p {
-		margin: 1rem 0;
-		font-size: 1rem;
-		line-height: 1.6rem;
-		font-family: 'Alegreya Sans', sans-serif;
-		font-weight: 300;
-		text-align: center;
-	}
+.spiel p{
+	height: 100%;
+	margin: 0 0 1rem;
+
+	font-family: 'Alegreya Sans', sans-serif;
+	font-weight: 300;
+	font-size: 1rem;
+	line-height: 1.6rem;
+	
+	text-align: center
+	margin 0 auto;
+
 	@media #{$small-and-up} {		//481px
-		p {
-			font-size: 1.125rem;
-		}
+		font-size: 1.125rem;
 	}
 	@media #{$smallish-and-up} {	//601px
-		margin: 3.5rem 0;
-		p {
-			font-size: 1.25rem;
-			line-height: 2rem;
-			width: 60%;
-			float: left;
-		}
+		margin: 0.5rem 0 2rem;
+		font-size: 1.25rem;
+		line-height: 2rem;
 	}
 	@media #{$sMedium-and-up} {		//641px
-
+		// margin: 1rem 0 2rem;
+		width: 60%;
+		float: left;
 	}
 	@media #{$medium-and-up} {		//769px
-		margin: 5rem 0 0;
+		margin: 2.5rem 0 0;
 	}
 	@media #{$large-and-up} {		//993px
-		margin: 6rem 0 0;
+		margin: rem 0 0;
 	}
 	@media #{$xlarge-and-up} {		//1025px
 	

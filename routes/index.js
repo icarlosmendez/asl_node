@@ -54,7 +54,3 @@ router.get('/search', function(req, res, next) {
 });
 
 module.exports = router;
-
-/*
-http://api.yelp.com/v2/search?oauth_consumer_key=7jcglOo2SxF1laGI5iG8ow&oauth_token=7zFN8ztVIXXw5Z16y3dhXvirWf-_O2pD&oauth_signature_method=HMAC-SHA1&oauth_signature=&term=german+food&location=Hayes&cll=37.77493,-122.419415
-*/

@@ -22,7 +22,9 @@
                             <span class="tile-bus_addr">
                                 <%= data.businesses[i].location.display_address[0] %><br>
                                 <%= data.businesses[i].location.display_address[1] %><br>
-                                <%= data.businesses[i].location.display_address[2] %>
+                                <%= data.businesses[i].location.display_address[2] %><br>
+                                <!--DEAL -->
+                                <%= data.businesses[i].deals[0].title %>
                             </span><br>
                             <!-- Yelp rating stars -->
                             <span class="tile-rating_stars">
@@ -34,6 +36,10 @@
                                     <%= data.businesses[i].display_phone %>
                                 </a>
                             </span><br>
+                            
+                            <!--<span>-->
+                            <!--<%= data.businesses[i].deals[0].what_you_get %>-->
+                            <!--</span>-->
                             
                         </div>
                     </div>

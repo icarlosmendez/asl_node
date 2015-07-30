@@ -7000,18 +7000,25 @@ img {
   border: none; }
 
 .teaserImg-round {
-  width: 100%;
-  margin: 15% auto;
   border-radius: 50%;
-  display: none; }
+  margin: 0.5rem auto; }
   @media only screen and (min-width: 601px) {
     .teaserImg-round {
       width: 30%;
-      margin: 5% 2.5%;
+      margin: 0.5rem 2rem 2rem 1rem;
       float: left; } }
+  @media only screen and (min-width: 769px) {
+    .teaserImg-round {
+      margin: 0.5rem 2.5rem 2rem 1rem; } }
 
 .teaserImg-rect {
-  margin: 1rem auto; }
+  margin: 0 auto 1rem; }
+  @media only screen and (min-width: 481px) {
+    .teaserImg-rect {
+      margin: 0.5rem auto 1rem; } }
+  @media only screen and (min-width: 601px) {
+    .teaserImg-rect {
+      margin: 1rem auto; } }
 
 .tile-img {
   border-radius: 50%;
@@ -7058,37 +7065,41 @@ h6 {
   font-size: 0.75rem;
   margin: 2.33rem 0; }
 
+p {
+  padding: 0;
+  margin: 0; }
+
 .spiel p {
-  margin: 1rem 0;
-  font-size: 1rem;
-  line-height: 1.6rem;
+  height: 100%;
+  margin: 0 0 1rem;
   font-family: 'Alegreya Sans', sans-serif;
   font-weight: 300;
-  text-align: center; }
-
-@media only screen and (min-width: 481px) {
-  .spiel p {
-    font-size: 1.125rem; } }
-
-@media only screen and (min-width: 601px) {
-  .spiel {
-    margin: 3.5rem 0; }
+  font-size: 1rem;
+  line-height: 1.6rem;
+  text-align: center 	margin 0 auto; }
+  @media only screen and (min-width: 481px) {
     .spiel p {
+      font-size: 1.125rem; } }
+  @media only screen and (min-width: 601px) {
+    .spiel p {
+      margin: 0.5rem 0 2rem;
       font-size: 1.25rem;
-      line-height: 2rem;
+      line-height: 2rem; } }
+  @media only screen and (min-width: 641px) {
+    .spiel p {
       width: 60%;
       float: left; } }
-
-@media only screen and (min-width: 769px) {
-  .spiel {
-    margin: 5rem 0 0; } }
-
-@media only screen and (min-width: 1025px) {
-  .spiel {
-    margin: 6rem 0 0; } }
+  @media only screen and (min-width: 769px) {
+    .spiel p {
+      margin: 2.5rem 0 0; } }
+  @media only screen and (min-width: 1025px) {
+    .spiel p {
+      margin: rem 0 0; } }
 
 header {
-  background-image: url(../img/green-poly.png); }
+  background-image: url(../img/green-poly.png);
+  border-bottom: 1px solid #fff;
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.5); }
 
 .logo {
   width: 12.5%;
@@ -7121,7 +7132,8 @@ main {
           flex: 1 0 auto; }
 
 #divResults {
-  background: url(../img/blue-poly.png); }
+  background-color: #477BC8;
+  z-index: 1; }
 
 /* Gradient transparent - color - transparent */
 hr {
@@ -7263,24 +7275,6 @@ footer {
   border-bottom: none;
   transition: all 0.5s ease; }
 
-._4z_b {
-  display: inline-block;
-  padding: 10px;
-  background-color: #a9db80;
-  background-image: linear-gradient(to bottom, #a9db80, #96c56f);
-  border: 1px solid #26759E;
-  border-radius: 7px;
-  box-shadow: #FEFFFF 0 1px 3px inset;
-  font-size: 21px;
-  font-weight: bold;
-  color: #05142E;
-  text-decoration: none;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5); }
-  ._4z_b:hover {
-    background-color: #8ed058;
-    background-image: linear-gradient(to bottom, #8ed058, #7bb64b);
-    border: 1px solid #26759E; }
-
 /* ======================= Social Components ======================= */
 .social {
   margin: 1rem 0; }
@@ -7300,7 +7294,6 @@ footer {
   color: white;
   height: 2rem;
   line-height: 2rem;
-  margin: 1rem auto 2rem;
   padding: 1rem 33%;
   border-radius: 0.25rem; }
   @media only screen and (min-width: 601px) {
@@ -7309,6 +7302,9 @@ footer {
   @media only screen and (min-width: 769px) {
     .button-results {
       padding: 1rem 12%; } }
+
+.button-spacer {
+  margin: 2rem 0; }
 
 /* ======================= Restaurant Tiles ======================= */
 .tile {

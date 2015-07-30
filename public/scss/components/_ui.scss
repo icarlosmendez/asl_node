@@ -1,32 +1,4 @@
 
-// Primary Button styles. Used for login/logout
-// The classname is an attempt at overriding facebook styles
-// These buttons no longer exist.
-._4z_b {
-    display:inline-block;
-    padding: 10px;
-    
-    background-color: #a9db80; 
-    background-image: linear-gradient(to bottom, #a9db80, #96c56f);
-    
-    border:1px solid #26759E;
-    border-radius: 7px;
-    box-shadow: #FEFFFF 0 1px 3px inset;
-    
-    font-size:21px;
-    font-weight:bold; color: #05142E;
-    // font-family:comic sans, comic sans ms, cursive, verdana, arial, sans-serif;
-     
-    text-decoration:none; 
-    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
-    
-    &:hover {
-        background-color: #8ed058; 
-        background-image: linear-gradient(to bottom, #8ed058, #7bb64b);
-        border:1px solid #26759E;
-    }
-}
-
 /* ======================= Social Components ======================= */
 
 .social {
@@ -52,13 +24,14 @@
 
 
 /* ======================= Results Button ======================= */
+
 // This button launches the results page and displays the search results to the user
 .button-results {
     background-color: $green;
     color: white;
     height: 2rem;
     line-height: 2rem;
-    margin: 1rem auto 2rem;
+    // margin: 3rem auto;
     padding: 1rem 33%;
     border-radius: 0.25rem;
     @media #{$small-and-up} {		//481px
@@ -79,6 +52,10 @@
     @media #{$xlarge-and-up} {		//1025px
 
     }
+}
+
+.button-spacer {
+    margin: 2rem 0;
 }
 
 
